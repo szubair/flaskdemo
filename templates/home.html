@@ -1,0 +1,27 @@
+<html>
+<head>
+ <title>ss-noc</title>
+</head>
+<body>
+<br>
+<center>SS-NOC, Sysadmins Reporing Tool</center>
+<br>
+<hr>
+
+<table>
+{% for customer in customers %}
+<tr>
+<td width="50%">{{ customer.id}}</a></td>
+<td width="50%"><a href=http://192.168.56.102:5000/noc/{{customer.customer }}>{{ customer.customer }}</a></td>
+
+<!--
+<td width="50%">{{ total_instances }}</a></td>
+<td width="50%">{{ total_windows }}</a></td>
+-->
+
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

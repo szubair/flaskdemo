@@ -1,0 +1,26 @@
+<html>
+<head>
+ <title>ss-noc</title>
+</head>
+<body>
+<br>
+<center>SS-NOC, Sysadmins Reporing Tool</center>
+<br>
+<br>
+<hr>
+Customer: ISSSDB
+<hr>
+
+<table>
+{% for server in servers %}
+<tr>
+<td width="50%">{{ server.instance_id }}</a></td>
+<td width="50%">{{ server.private_ip }}</a></td>
+<td width="50%">{{ server.public_ip }}</a></td>
+<td width="50%">{{ server.os }}</a></td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
